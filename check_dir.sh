@@ -1,7 +1,10 @@
 #!/bin/bash
+for i in tmp appvol sbin etc/hosts
+do
 
-if [ -d "/appvol" ] ; then
-    echo "/appvol is a directory"
+if [ -d "/$i" ] ; then
+    echo "/$i is a directory"
 else 
-    echo "/appvol is not a directory"
+    echo "/$i is not a directory"
 fi
+done
